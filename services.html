@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alle tuindiensten van MI Gardens — gazononderhoud, snoeien, onkruidbestrijding, beplanting, terrasaanleg, omheining en meer.">
+  <title>Diensten — MI Gardens Tuinonderhoud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav nav--solid" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="./index.html" class="nav__logo" aria-label="MI Gardens home">
+        <img src="./images/logo.svg" alt="MI Gardens Tuinonderhoud logo" width="140" height="52">
+      </a>
+      <div class="nav__menu" role="list">
+        <a href="./index.html" class="nav__link" role="listitem">Home</a>
+        <a href="./about.html" class="nav__link" role="listitem">Over Ons</a>
+        <a href="./services.html" class="nav__link nav__link--active" role="listitem">Diensten</a>
+        <a href="./contact.html" class="nav__link" role="listitem">Contact</a>
+      </div>
+      <a href="./contact.html" class="btn btn--primary nav__cta">Vrijblijvend Offerte</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+    <a href="./index.html" class="nav__mobile-link">Home</a>
+    <a href="./about.html" class="nav__mobile-link">Over Ons</a>
+    <a href="./services.html" class="nav__mobile-link nav__mobile-link--active">Diensten</a>
+    <a href="./contact.html" class="nav__mobile-link">Contact</a>
+    <div class="nav__mobile-cta">
+      <a href="./contact.html" class="btn btn--primary btn--lg">Vrijblijvend Offerte</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="page-hero__eyebrow">Wat wij bieden</span>
+        <h1 class="page-hero__title" id="page-title">Onze Diensten</h1>
+        <p class="page-hero__subtitle">
+          Negen professionele tuindiensten — voor de tuin die u verdient.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ALL SERVICES ===== -->
+    <section class="section section--lg" aria-labelledby="services-all-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__eyebrow">Volledig aanbod</span>
+          <h2 class="section-header__title" id="services-all-heading">Alles voor uw groene buitenruimte</h2>
+          <div class="divider"></div>
+          <p class="section-header__subtitle">
+            Van regulier onderhoud tot complete aanleg — wij zijn uw één-stopshop voor alles wat uw tuin nodig heeft.
+          </p>
+        </header>
+
+        <div class="services-full__grid">
+
+          <!-- 1. Gazononderhoud -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=75"
+                alt="Gazononderhoud en aanleg"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🌿</div>
+                <h2 class="service-full-card__title">Gazononderhoud & Aanleg</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Een perfect gazon begint bij de juiste basis. Wij maaien, bemesten, verticuteren en leggen nieuwe gazons aan — voor een groen tapijt dat het hele jaar door mooi blijft.
+              </p>
+              <ul class="service-full-card__points" aria-label="Inbegrepen diensten">
+                <li class="service-full-card__point">Regelmatig maaien op maat</li>
+                <li class="service-full-card__point">Bemesting en verticutatie</li>
+                <li class="service-full-card__point">Aanleg van nieuwe gazons (zode of zaad)</li>
+                <li class="service-full-card__point">Herstel van beschadigde plekken</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Snoeien & Knippen -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75"
+                alt="Hagen snoeien en knippen"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">✂️</div>
+                <h2 class="service-full-card__title">Snoeien & Knippen</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Gezonde planten groeien beter met de juiste snoei op het juiste moment. Onze vakspecialisten snoeien hagen, struiken en bomen vakkundig en met oog voor esthetiek.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Haagknippen (alle soorten)</li>
+                <li class="service-full-card__point">Struiksnoei en vormsnoei</li>
+                <li class="service-full-card__point">Boomverzorging en kroonverlaging</li>
+                <li class="service-full-card__point">Verwijdering van snoeiafval</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Onkruidbestrijding -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=700&q=75"
+                alt="Onkruidbestrijding in de tuin"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🚫</div>
+                <h2 class="service-full-card__title">Onkruidbestrijding</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Onkruid aanpakken voordat het de overhand neemt. Wij gebruiken efficiënte en waar mogelijk milieuvriendelijke methoden om uw borders, paden en gazon onkruidvrij te houden.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Handmatige en mechanische verwijdering</li>
+                <li class="service-full-card__point">Toepassing van bodembedekkers</li>
+                <li class="service-full-card__point">Preventieve behandeling van paden en terrassen</li>
+                <li class="service-full-card__point">Milieubewuste aanpak</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Beplanting -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=700&q=75"
+                alt="Planten en beplanting in de tuin"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🌱</div>
+                <h2 class="service-full-card__title">Beplanting</h2>
+              </div>
+              <p class="service-full-card__desc">
+                De juiste plant op de juiste plek. Wij adviseren u over de beste keuze van planten, struiken en bomen voor uw situatie en installeren ze vakkundig voor optimale groei.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Plantadvies op maat van uw tuin</li>
+                <li class="service-full-card__point">Seizoensgebonden beplanting</li>
+                <li class="service-full-card__point">Vaste planten en heesterbeplanting</li>
+                <li class="service-full-card__point">Grondvoorbereiding en bemesting</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Bedrijfsterreinen -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=75"
+                alt="Onderhoud van bedrijfsterreinen"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🏢</div>
+                <h2 class="service-full-card__title">Onderhoud Bedrijfsterreinen</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Een verzorgd bedrijfsterrein maakt een professionele eerste indruk. Wij bieden betrouwbaar en regelmatig onderhoud van groenstroken, parkings en representatieve buitenruimtes.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Vaste onderhoudscontracten</li>
+                <li class="service-full-card__point">Groenstroken en parkings</li>
+                <li class="service-full-card__point">Seizoensgebonden aanpassingen</li>
+                <li class="service-full-card__point">Rapportage en communicatie</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Reiniging opritten/terrassen -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=700&q=75"
+                alt="Reinigen van opritten en terrassen"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🧹</div>
+                <h2 class="service-full-card__title">Reiniging Opritten & Terrassen</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Mos, algen en vuil op uw oprit of terras? Wij reinigen hogedrukvast en grondig, zodat uw verharding er als nieuw uitziet en veilig blijft voor iedereen.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Hogedrukreiniging van alle verharding</li>
+                <li class="service-full-card__point">Mosbehandeling en preventie</li>
+                <li class="service-full-card__point">Voegen reinigen en nabehandeling</li>
+                <li class="service-full-card__point">Veilige en snelle uitvoering</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Aanleg opritten/terrassen -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=700&q=75"
+                alt="Aanleg van opritten en terrassen"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🧱</div>
+                <h2 class="service-full-card__title">Aanleg Opritten & Terrassen</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Een kwaliteitsvolle oprit of terras vraagt om degelijk vakwerk. Wij leggen aan in verschillende materialen — van betontegels tot natuursteen — met oog voor esthetiek en duurzaamheid.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Aanleg in diverse materialen</li>
+                <li class="service-full-card__point">Correcte fundering en waterafvoer</li>
+                <li class="service-full-card__point">Bestratingsadvies op maat</li>
+                <li class="service-full-card__point">Verzorgde randafwerking</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Omheiningen -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75"
+                alt="Plaatsing van omheiningen en afsluitingen"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🏗️</div>
+                <h2 class="service-full-card__title">Plaatsing Omheiningen</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Omheining zorgt voor privacy, veiligheid en een duidelijke perceelgrens. Wij plaatsen diverse types — van houten schuttingen tot metalen hekwerken — vakkundig en duurzaam.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Houten schuttingen en tuinafsluitingen</li>
+                <li class="service-full-card__point">Metalen en aluminium hekwerken</li>
+                <li class="service-full-card__point">Betonpalen en -planken</li>
+                <li class="service-full-card__point">Poorten op maat</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Tuinaanleg -->
+          <article class="service-full-card">
+            <div class="service-full-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1584479898061-15742e14f50d?w=700&q=75"
+                alt="Algemene tuinaanleg en landscaping"
+                loading="lazy"
+                width="700"
+                height="394"
+              >
+            </div>
+            <div class="service-full-card__body">
+              <div class="service-full-card__icon-row">
+                <div class="service-full-card__icon" aria-hidden="true">🏡</div>
+                <h2 class="service-full-card__title">Algemene Tuinaanleg</h2>
+              </div>
+              <p class="service-full-card__desc">
+                Uw droomtuin realiseren van concept tot oplevering. Wij combineren alle disciplines voor een complete tuinaanleg — gazon, beplanting, verharding en meer — in perfecte harmonie.
+              </p>
+              <ul class="service-full-card__points">
+                <li class="service-full-card__point">Complete tuinrenovaties</li>
+                <li class="service-full-card__point">Landschapsontwerp en advies</li>
+                <li class="service-full-card__point">Combinatie van alle disciplines</li>
+                <li class="service-full-card__point">Projectbegeleiding van A tot Z</li>
+              </ul>
+              <div class="service-full-card__cta">
+                <a href="./contact.html" class="btn btn--primary w-full" style="justify-content:center;">Offerte Aanvragen</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" aria-labelledby="services-cta-heading">
+      <div class="container">
+        <div class="cta-section__content">
+          <h2 class="cta-section__title" id="services-cta-heading">Niet gevonden wat u zoekt?</h2>
+          <p class="cta-section__subtitle">
+            Neem contact op — wij bekijken samen welke oplossing het beste bij uw situatie past.
+          </p>
+          <div class="cta-section__actions">
+            <a href="./contact.html" class="btn btn--accent btn--lg">Neem contact op</a>
+            <a href="./about.html" class="btn btn--outline-white btn--lg">Lees meer over ons</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Sitefooter">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="./images/logo.svg" alt="MI Gardens logo" width="140" height="52">
+          <p>Uw betrouwbare partner voor professioneel tuinonderhoud en groene inrichting — voor particulieren én bedrijven.</p>
+          <div class="footer__social" aria-label="Sociale media">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Navigatie</h3>
+          <nav class="footer__links">
+            <a href="./index.html" class="footer__link">Home</a>
+            <a href="./about.html" class="footer__link">Over Ons</a>
+            <a href="./services.html" class="footer__link">Diensten</a>
+            <a href="./contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Diensten</h3>
+          <nav class="footer__links">
+            <a href="./services.html" class="footer__link">Gazononderhoud</a>
+            <a href="./services.html" class="footer__link">Snoeien & Knippen</a>
+            <a href="./services.html" class="footer__link">Onkruidbestrijding</a>
+            <a href="./services.html" class="footer__link">Beplanting</a>
+            <a href="./services.html" class="footer__link">Oprit & Terras</a>
+            <a href="./services.html" class="footer__link">Tuinaanleg</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+3200000000" class="footer__link">+32 000 00 00 00</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:info@migardens.be" class="footer__link">info@migardens.be</a>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 MI Gardens Tuinonderhoud. Alle rechten voorbehouden.</p>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" class="footer__link" style="font-size: var(--text-sm);">Privacybeleid</a>
+          <a href="#" class="footer__link" style="font-size: var(--text-sm);">Algemene Voorwaarden</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

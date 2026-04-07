@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leer meer over MI Gardens — ons verhaal, onze waarden en het team achter uw groene buitenruimte.">
+  <title>Over Ons — MI Gardens Tuinonderhoud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav nav--solid" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="./index.html" class="nav__logo" aria-label="MI Gardens home">
+        <img src="./images/logo.svg" alt="MI Gardens Tuinonderhoud logo" width="140" height="52">
+      </a>
+      <div class="nav__menu" role="list">
+        <a href="./index.html" class="nav__link" role="listitem">Home</a>
+        <a href="./about.html" class="nav__link nav__link--active" role="listitem">Over Ons</a>
+        <a href="./services.html" class="nav__link" role="listitem">Diensten</a>
+        <a href="./contact.html" class="nav__link" role="listitem">Contact</a>
+      </div>
+      <a href="./contact.html" class="btn btn--primary nav__cta">Vrijblijvend Offerte</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+    <a href="./index.html" class="nav__mobile-link">Home</a>
+    <a href="./about.html" class="nav__mobile-link nav__mobile-link--active">Over Ons</a>
+    <a href="./services.html" class="nav__mobile-link">Diensten</a>
+    <a href="./contact.html" class="nav__mobile-link">Contact</a>
+    <div class="nav__mobile-cta">
+      <a href="./contact.html" class="btn btn--primary btn--lg">Vrijblijvend Offerte</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="about-page-title">
+      <div class="container">
+        <span class="page-hero__eyebrow">Ons verhaal</span>
+        <h1 class="page-hero__title" id="about-page-title">Over MI Gardens</h1>
+        <p class="page-hero__subtitle">
+          Passie voor groen, toewijding aan kwaliteit — dat is de basis van alles wat wij doen.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== OUR STORY ===== -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="about-story">
+
+          <div class="about-story__img">
+            <img
+              src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=75"
+              alt="MI Gardens tuinman aan het werk in een prachtige tuin"
+              loading="lazy"
+              width="800"
+              height="800"
+            >
+          </div>
+
+          <div>
+            <span class="section-header__eyebrow">Wie zijn wij</span>
+            <h2 style="margin-top:12px; margin-bottom:16px; font-size: var(--text-4xl);" id="story-heading">
+              Meer dan tien jaar <em style="font-style:italic; color:var(--color-primary);">groene passie</em>
+            </h2>
+            <div class="divider divider--left"></div>
+            <p style="margin-bottom:var(--space-3); font-size:var(--text-lg); line-height:1.75;">
+              MI Gardens Tuinonderhoud werd opgericht vanuit één eenvoudige overtuiging: elke tuin verdient professionele zorgen en persoonlijke aandacht. Wat begon als een kleine lokale onderneming, groeide uit tot een betrouwbare naam in de regio.
+            </p>
+            <p style="margin-bottom:var(--space-3); line-height:1.75;">
+              Wij geloven dat een mooie tuin meer is dan esthetiek alleen — het is een plek om te ontspannen, te genieten en trots op te zijn. Dat gevoel willen wij creëren bij elke klant, groot of klein.
+            </p>
+            <p style="margin-bottom:var(--space-5); line-height:1.75;">
+              Van het eerste contact tot de laatste detailafwerking staat kwaliteit centraal. Onze vaste medewerkers worden zorgvuldig geselecteerd en opgeleid, zodat u altijd kunt rekenen op vakmanschap en professionaliteit.
+            </p>
+            <div style="display:flex; gap:var(--space-2); flex-wrap:wrap;">
+              <a href="./contact.html" class="btn btn--primary">Neem contact op</a>
+              <a href="./services.html" class="btn btn--outline">Bekijk onze diensten</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VALUES ===== -->
+    <section class="section section--alt" aria-labelledby="values-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__eyebrow">Waar wij voor staan</span>
+          <h2 class="section-header__title" id="values-heading">Onze Waarden</h2>
+          <div class="divider"></div>
+          <p class="section-header__subtitle">
+            Vier kernwaarden die alles bepalen wat wij doen en hoe wij het doen.
+          </p>
+        </header>
+
+        <div class="about-values__grid">
+
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🌱</div>
+            <h3 class="value-card__title">Duurzaamheid</h3>
+            <p class="value-card__desc">We kiezen bewust voor milieuvriendelijke methoden en duurzame materialen voor een groenere toekomst.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">💎</div>
+            <h3 class="value-card__title">Kwaliteit</h3>
+            <p class="value-card__desc">Compromisloos in elk detail. Van de keuze van materialen tot de laatste snit — kwaliteit is altijd onze norm.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="value-card__title">Betrouwbaarheid</h3>
+            <p class="value-card__desc">Stipt op afspraken, eerlijk in communicatie en transparant in prijzen. U kunt altijd op ons rekenen.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-card__icon" aria-hidden="true">❤️</div>
+            <h3 class="value-card__title">Passie</h3>
+            <p class="value-card__desc">Tuinieren is meer dan een job — het is een roeping. Die passie voelt u in elk project dat wij aanpakken.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section class="section" aria-labelledby="team-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__eyebrow">De mensen achter MI Gardens</span>
+          <h2 class="section-header__title" id="team-heading">Ons Team</h2>
+          <div class="divider"></div>
+          <p class="section-header__subtitle">
+            Gedreven professionals met groen in hun DNA.
+          </p>
+        </header>
+
+        <div class="team__grid">
+
+          <article class="team-card">
+            <div class="team-card__photo">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=75"
+                alt="Portret van teamlid"
+                loading="lazy"
+                width="500"
+                height="500"
+              >
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Mohamed I.</h3>
+              <p class="team-card__role">Zaakvoerder & Hoofdtuinier</p>
+              <p style="font-size:var(--text-sm); color:var(--color-text-muted); margin-top:8px; line-height:1.65;">
+                Meer dan 10 jaar ervaring in tuinonderhoud en aanleg. Gepassioneerd door mooie buitenruimtes die mensen blij maken.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__photo">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=75"
+                alt="Portret van teamlid"
+                loading="lazy"
+                width="500"
+                height="500"
+              >
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Tuinspecialist</h3>
+              <p class="team-card__role">Senior Tuinmedewerker</p>
+              <p style="font-size:var(--text-sm); color:var(--color-text-muted); margin-top:8px; line-height:1.65;">
+                Expert in bestrating en terrasaanleg. Nauwkeurig werker met oog voor elk detail en perfecte afwerking.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__photo">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=75"
+                alt="Portret van teamlid"
+                loading="lazy"
+                width="500"
+                height="500"
+              >
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Plantenexpert</h3>
+              <p class="team-card__role">Beplanting & Ontwerp</p>
+              <p style="font-size:var(--text-sm); color:var(--color-text-muted); margin-top:8px; line-height:1.65;">
+                Gespecialiseerd in beplantingsadvies en seizoensgebonden tuinontwerp voor elke stijl en elk budget.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TIMELINE ===== -->
+    <section class="section section--alt" aria-labelledby="timeline-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__eyebrow">Onze groei</span>
+          <h2 class="section-header__title" id="timeline-heading">Ons Verhaal door de Jaren</h2>
+          <div class="divider"></div>
+        </header>
+
+        <div class="timeline" role="list">
+
+          <div class="timeline__item" role="listitem">
+            <div class="timeline__content">
+              <div class="timeline__year">2013</div>
+              <h3 class="timeline__event-title">De start</h3>
+              <p class="timeline__event-desc">MI Gardens gaat van start als eenmanszaak met een grote droom en nog grotere passie voor tuinieren.</p>
+            </div>
+            <div class="timeline__dot" aria-hidden="true">2013</div>
+            <div class="timeline__spacer"></div>
+          </div>
+
+          <div class="timeline__item" role="listitem">
+            <div class="timeline__spacer"></div>
+            <div class="timeline__dot" aria-hidden="true">2016</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2016</div>
+              <h3 class="timeline__event-title">Eerste groei</h3>
+              <p class="timeline__event-desc">Het team groeit — eerste medewerkers vervoegen MI Gardens. We breiden ons dienstaanbod uit met bestrating en omheiningen.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" role="listitem">
+            <div class="timeline__content">
+              <div class="timeline__year">2019</div>
+              <h3 class="timeline__event-title">Bedrijfsklanten</h3>
+              <p class="timeline__event-desc">Eerste grote onderhoudscontracten met bedrijven worden afgesloten. MI Gardens wordt partner voor professionele buitenruimtes.</p>
+            </div>
+            <div class="timeline__dot" aria-hidden="true">2019</div>
+            <div class="timeline__spacer"></div>
+          </div>
+
+          <div class="timeline__item" role="listitem">
+            <div class="timeline__spacer"></div>
+            <div class="timeline__dot" aria-hidden="true">2022</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2022</div>
+              <h3 class="timeline__event-title">350+ klanten</h3>
+              <p class="timeline__event-desc">We bereiken de mijlpaal van 350 tevreden klanten en worden erkend als betrouwbare tuinpartner in de regio.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" role="listitem">
+            <div class="timeline__content">
+              <div class="timeline__year">2024</div>
+              <h3 class="timeline__event-title">Vandaag</h3>
+              <p class="timeline__event-desc">MI Gardens blijft groeien met dezelfde waarden: kwaliteit, betrouwbaarheid en persoonlijke aandacht voor elke klant.</p>
+            </div>
+            <div class="timeline__dot" aria-hidden="true">Nu</div>
+            <div class="timeline__spacer"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" aria-labelledby="about-cta-heading">
+      <div class="container">
+        <div class="cta-section__content">
+          <h2 class="cta-section__title" id="about-cta-heading">Laten we samenwerken</h2>
+          <p class="cta-section__subtitle">
+            Klaar om uw tuin te laten stralen? Neem vandaag contact op voor een vrijblijvende offerte.
+          </p>
+          <div class="cta-section__actions">
+            <a href="./contact.html" class="btn btn--accent btn--lg">Vraag gratis offerte aan</a>
+            <a href="./services.html" class="btn btn--outline-white btn--lg">Bekijk onze diensten</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Sitefooter">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="./images/logo.svg" alt="MI Gardens logo" width="140" height="52">
+          <p>Uw betrouwbare partner voor professioneel tuinonderhoud en groene inrichting — voor particulieren én bedrijven.</p>
+          <div class="footer__social" aria-label="Sociale media">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Navigatie</h3>
+          <nav class="footer__links">
+            <a href="./index.html" class="footer__link">Home</a>
+            <a href="./about.html" class="footer__link">Over Ons</a>
+            <a href="./services.html" class="footer__link">Diensten</a>
+            <a href="./contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Diensten</h3>
+          <nav class="footer__links">
+            <a href="./services.html" class="footer__link">Gazononderhoud</a>
+            <a href="./services.html" class="footer__link">Snoeien & Knippen</a>
+            <a href="./services.html" class="footer__link">Onkruidbestrijding</a>
+            <a href="./services.html" class="footer__link">Beplanting</a>
+            <a href="./services.html" class="footer__link">Tuinaanleg</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+3200000000" class="footer__link">+32 000 00 00 00</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:info@migardens.be" class="footer__link">info@migardens.be</a>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 MI Gardens Tuinonderhoud. Alle rechten voorbehouden.</p>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" class="footer__link" style="font-size: var(--text-sm);">Privacybeleid</a>
+          <a href="#" class="footer__link" style="font-size: var(--text-sm);">Algemene Voorwaarden</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
