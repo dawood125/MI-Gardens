@@ -186,6 +186,22 @@
     const form = document.querySelector('.contact-form__form');
     if (!form) return;
 
+    let statusEl = form.querySelector('.form__status');
+
+    function setStatus(message, type) {
+      if (!statusEl) {
+        statusEl = document.createElement('p');
+        statusEl.className = 'form__status';
+        statusEl.setAttribute('role', 'status');
+        statusEl.setAttribute('aria-live', 'polite');
+        form.appendChild(statusEl);
+      }
+
+      statusEl.classList.remove('form__status--info', 'form__status--success', 'form__status--error');
+      statusEl.classList.add('form__status--' + type);
+      statusEl.textContent = message;
+    }
+
     function showError(input, message) {
       const group = input.closest('.form__group');
       if (!group) return;
@@ -194,20 +210,26 @@
         errorEl.textContent = message;
         errorEl.classList.add('is-visible');
       }
-      input.style.borderColor = '#e53e3e';
+      input.classList.add('is-invalid');
+      input.setAttribute('aria-invalid', 'true');
     }
 
     function clearError(input) {
       const group = input.closest('.form__group');
       if (!group) return;
       const errorEl = group.querySelector('.form__error');
-      if (errorEl) errorEl.classList.remove('is-visible');
-      input.style.borderColor = '';
+      if (errorEl) {
+        errorEl.textContent = '';
+        errorEl.classList.remove('is-visible');
+      }
+      input.classList.remove('is-invalid');
+      input.removeAttribute('aria-invalid');
     }
 
     // Clear errors on input
     form.querySelectorAll('.form__input, .form__textarea, .form__select').forEach(function (input) {
       input.addEventListener('input', function () { clearError(this); });
+      input.addEventListener('change', function () { clearError(this); });
     });
 
     form.addEventListener('submit', function (e) {
@@ -219,39 +241,32 @@
       const message = form.querySelector('#message');
 
       if (name && !name.value.trim()) {
-        showError(name, 'Please enter your name.');
+        showError(name, 'Vul alstublieft uw naam in.');
         valid = false;
       }
 
       if (email) {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email.value.trim()) {
-          showError(email, 'Please enter your email address.');
+          showError(email, 'Vul alstublieft uw e-mailadres in.');
           valid = false;
         } else if (!emailPattern.test(email.value.trim())) {
-          showError(email, 'Please enter a valid email address.');
+          showError(email, 'Vul alstublieft een geldig e-mailadres in.');
           valid = false;
         }
       }
 
       if (message && !message.value.trim()) {
-        showError(message, 'Please enter your message.');
+        showError(message, 'Vul alstublieft uw bericht in.');
         valid = false;
       }
 
-      if (valid) {
-        const btn = form.querySelector('[type="submit"]');
-        const original = btn.textContent;
-        btn.textContent = '✓ Message Sent!';
-        btn.disabled = true;
-        btn.style.background = '#166022';
-        setTimeout(function () {
-          btn.textContent = original;
-          btn.disabled = false;
-          btn.style.background = '';
-          form.reset();
-        }, 3000);
+      if (!valid) {
+        setStatus('Controleer de gemarkeerde velden en probeer opnieuw.', 'error');
+        return;
       }
+
+      setStatus('Uw gegevens zijn lokaal gecontroleerd. Dit formulier is momenteel een demo en verzendt nog geen e-mail. Neem tijdelijk contact op via telefoon of e-mail.', 'info');
     });
   }
 
